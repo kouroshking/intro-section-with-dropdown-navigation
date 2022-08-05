@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__inner">
+          <nav>
+            <div class="navbar__logo">
+              <a href="#"> snap </a>
+            </div>
+            <ul class="navbar__menu hide-on-mobile">
+              <li class="drop-down">
+                <a class="drop-down__link">Features </a>
+                <ul class="drop-down__submenu">
+                  <li>
+                    <img src="./assets/images/icon-todo.svg" /><a href="#"
+                      >Todo List</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-calendar.svg" /><a href="#"
+                      >Calender</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-reminders.svg" /><a href="#"
+                      >Reminders</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-planning.svg" /><a href="#"
+                      >Planing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="drop-down">
+                <a class="drop-down__link">Company</a>
+                <ul class="drop-down__submenu">
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </nav>
+          <div class="navbar__user-section hide-on-mobile">
+            <a href="#" class="navbar__link">Login</a>
+            <a href="#" class="navbar__btn">Register</a>
+          </div>
+          <div class="mobile-menu hide-on-desktop" id="mobile-menu">
+            <img src="./assets/images/icon-menu.svg" alt="menu icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <!-- <div class="header__container"> -->
+      <div class="header__inner">
+        <div class="header__content">
+          <div class="header__content__inner">
+            <h1 class="header__title">
+              Make <br class="hide-on-mobile" />Remote Work
+            </h1>
+            <p class="header__desc">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar. Learn
+              more
+            </p>
+            <a class="header__btn">Learn More</a>
+            <div class="header__sponsors">
+              <div class="header__sponsor">
+                <img src="./assets/images/client-databiz.svg" alt="sponsor" />
+              </div>
+              <div class="header__sponsor">
+                <img
+                  src="./assets/images/client-audiophile.svg"
+                  alt="sponsor"
+                />
+              </div>
+              <div class="header__sponsor">
+                <img src="./assets/images/client-meet.svg" alt="sponsor" />
+              </div>
+              <div class="header__sponsor">
+                <img src="./assets/images/client-maker.svg" alt="sponsor" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="header__image hide-on-mobile"
+          src="./assets/images/image-hero-desktop.png"
+          alt="header"
+        />
+        <img
+          class="header__image hide-on-desktop"
+          src="./assets/images/image-hero-mobile.png"
+          alt="header image mobile"
+        />
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="mobile-nav hide-on-desktop" id="mobile-nav">
+      <div class="mobile-nav__inner">
+        <div class="mobile-nav__close" id="mobile-nav-close">
+          <img src="./assets/images/icon-close-menu.svg" alt="close icon" />
+        </div>
+        <ul class="mobile-nav__menu">
+          <li class="drop-down">
+            <a class="drop-down__link">Features </a>
+            <ul class="drop-down__submenu">
+              <li>
+                <img src="./assets/images/icon-todo.svg" /><a href="#"
+                  >Todo List</a
+                >
+              </li>
+              <li>
+                <img src="./assets/images/icon-calendar.svg" /><a href="#"
+                  >Calender</a
+                >
+              </li>
+              <li>
+                <img src="./assets/images/icon-reminders.svg" /><a href="#"
+                  >Reminders</a
+                >
+              </li>
+              <li>
+                <img src="./assets/images/icon-planning.svg" /><a href="#"
+                  >Planing</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="drop-down">
+            <a class="drop-down__link">Company</a>
+            <ul class="drop-down__submenu">
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Our Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <div class="mobile-nav__user-section">
+          <a href="#" class="mobile-nav__link">Login</a>
+          <a href="#" class="mobile-nav__btn">Register</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script>
+      const dropdownItems = document.querySelectorAll(".drop-down");
+      const mobileMenuIcon = document.getElementById("mobile-menu");
+      const closeMobileNavIcon = document.getElementById("mobile-nav-close");
+      const mobileNav = document.getElementById("mobile-nav");
+
+      dropdownItems.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.currentTarget.classList.toggle("show");
+        });
+      });
+
+      mobileMenuIcon.addEventListener("click", () => {
+        mobileNav.classList.add("show");
+      });
+
+      closeMobileNavIcon.addEventListener("click", () => {
+        mobileNav.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
