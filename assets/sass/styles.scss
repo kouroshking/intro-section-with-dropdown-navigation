@@ -177,6 +177,12 @@ $icon-size: 0.8rem;
       border-color: var(--almost-black);
     }
   }
+  &__user-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
 
 .header {
